@@ -9,7 +9,12 @@ const Home = () => {
                 <div className="text-overlay">
                     <h1 className="university-text">University of Ottawa</h1>
                     <h2 className="bsa-text">Bangladeshi Student Association</h2>
-                    <button className="btn-member">Become a Member</button>
+                    <button
+                        className="btn-member"
+                        onClick={() => (window.location.href = '/about')}
+                        >
+                        Become a Member
+                    </button>
                 </div>
             </div>
 

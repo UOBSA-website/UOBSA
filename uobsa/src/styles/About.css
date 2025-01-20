@@ -1,0 +1,88 @@
+/* About Page Styling */
+.about-section {
+    background-color: #f5f5f5; /* Light grey background */
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.about-heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #06290E; /* Dark green */
+}
+
+.subheading {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #333;
+}
+
+.about-description p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 1rem 0;
+}
+
+/* Image Gallery */
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.about-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+.about-form {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #272727; /* Dark background */
+    color: #06290E; /* Dark green text */
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.about-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.about-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.submit-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: darkred;
+}
