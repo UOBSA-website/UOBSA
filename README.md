@@ -11,3 +11,6 @@ The University of Ottawa Bengali Students Association (UOBSA) website serves as 
 - Facilitate communication and collaboration among members.
 
 This website is designed to be a resourceful and engaging platform for all members of the UOBSA community.
+
+
+**** Reminder to Fix video LFS problems
