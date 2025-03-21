@@ -1,0 +1,199 @@
+/* Welcome Section - Solid Green Background */
+.welcome-section {
+    background: #06402B;
+    color: white;
+    text-align: center;
+    padding: 30px 10px; /* Ensures text has enough space */
+  }
+  
+  .welcome-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .welcome-title {
+    font-size: 42px;
+    font-weight: bold;
+  }
+  
+  .welcome-text {
+    font-size: 18px;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+/* Team Image Section with Dark Green Background */
+.team-image-section {
+    background: #06402B; /* Dark Green Background */
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers image horizontally */
+    align-items: center; /* Centers vertically (if needed) */
+    padding: 40px 0; /* Adds spacing */
+    height: 500px; /* Ensures a consistent section height */
+  }
+  
+  /* Centered and Cropped Team Image */
+  .team-image {
+    width: 80%; /* Adjust for desired cropping effect */
+    max-height: 450px; /* Controls height */
+    object-fit: cover; /* Ensures image scales without distortion */
+    object-position: center; /* Centers the image */
+    border-radius: 20px; /* Optional: Rounds the edges */
+  }
+  
+  
+
+  /* Two-Column Layout */
+.mission-join-container {
+    display: flex;
+    background: #06402B;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Our Mission Section */
+  .our-mission-section {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .our-mission-section h2 {
+    font-size: 28px;
+    color: #b22222;
+    margin-bottom: 15px;
+  }
+  
+  .our-mission-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .our-mission-section li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Why Join Us Section */
+  .why-join-section {
+    flex: 1;
+    padding: 30px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .why-join-section h2 {
+    font-size: 28px;
+    color: #06402B;
+    margin-bottom: 15px;
+  }
+  
+  /* Grid Layout for Benefits */
+  .why-join-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  /* Individual Cards */
+  .join-item {
+    background: #eef7f3;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive for Smaller Screens */
+  @media (max-width: 900px) {
+    .mission-join-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .why-join-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Call to Action Section */
+.cta-section {
+    text-align: center;
+    background: #06402B; /* Dark Green Background */
+    color: white;
+    padding: 60px 20px;
+  }
+  
+  /* CTA Title */
+  .cta-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* CTA Text */
+  .cta-section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    line-height: 1.6;
+  }
+  
+/* Call to Action Section */
+.cta-section {
+    text-align: center;
+    background: #06402B; /* Dark Green Background */
+    color: white;
+    padding: 60px 20px;
+  }
+  
+  /* CTA Title */
+  .cta-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* CTA Text */
+  .cta-section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    line-height: 1.6;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: #E63946; /* Red Button */
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hover Effect - Pop Out */
+  .cta-button:hover {
+    background: #C62839; /* Darker Red */
+    transform: scale(1.1); /* Slightly enlarge */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow for pop-out effect */
+  }
+  
+  /* Button Click Effect */
+  .cta-button:active {
+    transform: scale(0.95); /* Slightly shrink when clicked */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  

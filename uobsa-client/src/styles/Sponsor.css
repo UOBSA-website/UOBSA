@@ -1,0 +1,322 @@
+/* ✅ Sponsor Page Styles */
+.sponsor-hero {
+    width: 100%;
+    height: 60vh;
+    background: url('../assets/logo.png') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Dark overlay to enhance text readability */
+.sponsor-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.sponsor-hero h1, .sponsor-hero p, .sponsor-hero a {
+    position: relative;
+    z-index: 1;
+}
+
+.sponsor-hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.sponsor-hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* CTA Button */
+.sponsor-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #FF4D4D, #C70039);
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.sponsor-btn:hover {
+    background: linear-gradient(90deg, #C70039, #FF4D4D);
+    transform: scale(1.05);
+}
+
+/* ✅ Why Sponsor Us */
+.why-sponsor {
+    background: #06402B;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.why-sponsor h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #F4D03F;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.benefit i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #F4D03F;
+}
+
+.benefit h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.benefit:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Sponsor Carousel */
+.sponsor-carousel {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #F5F5F5;
+    overflow: hidden;
+    position: relative;
+}
+
+.sponsor-carousel h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #06402B;
+}
+
+/* ✅ Carousel Container */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* ✅ Track holding logos */
+.carousel-track {
+    display: flex;
+    align-items: center;
+    gap: 4rem; /* Ensures even spacing */
+    animation: scrollLoop 60s linear infinite;
+    width: max-content;
+}
+
+/* ✅ Sponsor Logos */
+.sponsor-logo {
+    height: 80px;
+    object-fit: contain;
+    filter: none;
+    transition: filter 0.3s ease-in-out;
+}
+
+/* ✅ Hover Effect to bring color back */
+.sponsor-logo:hover {
+    filter: none;
+}
+
+/* ✅ Seamless Infinite Scrolling */
+@keyframes scrollLoop {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* ✅ Sponsorship Impact */
+.impact-grid {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #D8BC70;
+}
+
+.impact-grid h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #06402B;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Sponsor Form */
+.sponsor-form-container {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sponsor-form-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #F4D03F;
+}
+
+.sponsor-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+.sponsor-form label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #F4D03F;
+    text-align: left;
+}
+
+.sponsor-form input,
+.sponsor-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* ✅ Submit Button */
+.submit-btn {
+    background: linear-gradient(90deg, #FF4D4D, #C70039);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #C70039, #FF4D4D);
+    transform: scale(1.05);
+}
+
+/* ✅ Confirmation Message */
+.thank-you {
+    font-size: 1.3rem;
+    background: #256946;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* ✅ FAQ Section */
+.faq-section {
+    background: #272727;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #F4D03F;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.accordion-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.accordion-item h3 {
+    font-size: 1.3rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-item span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.accordion-item p {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+/* ✅ Show answer when active */
+.accordion-item.active p {
+    display: block;
+}
